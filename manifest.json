@@ -1,0 +1,17 @@
+{
+    "name":"Create List",
+    "short_name":"ListMaker",
+    "start_url":".",
+    "background_color":"rgb(114, 201, 165)",
+    "theme_color":"rgb(92, 161, 132)",
+    "display":"standalone",
+    "icons":[
+        {
+            "src":"./ListMaker logo.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        }
+        
+    ]
+
+}

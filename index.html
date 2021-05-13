@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,  minimum-scale=1, maximum-scale=1"
+    />
+	  
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="manifest" href="./manifest.json">
+	<link rel="shortcut icon" href="./ListMaker logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Create List</title>
+  </head>
+  <body>
+	<header>
+		<div class="logo"><i class="fas fa-list-alt"></i> Create List <sub style="font-size: 0.7rem;font-style: italic;"> by Sagar</sub></div>
+
+		<div class="menuitems2">
+
+			<div class="icons" onclick="location.href='./import-export/import-export.html'" style="color: rgb(38, 68, 56);">
+				<i class="fas fa-upload"> </i> | <i class="fas fa-download"></i> </i>
+			</div>
+      <div class="icons" onclick="location.href='./contact-us/contact.html'" style="color: rgb(38, 68, 56);">
+				<i class="fas fa-envelope"></i>
+			</div>
+			
+		</div>
+
+		<div class="bar">
+            <button class="menubtn-bar" onclick="popupmenu()">
+				<i id="changeclas" class="fas fa-ellipsis-v" style="font-size: 1.3rem;"></i>
+            </button>
+        </div>
+	</header>
+
+	<div class="menuitems">
+        <button class="btnn" onclick="window.location = './import-export/import-export.html'">im/ex - port</button>
+		<button class="btnn" onclick="window.location = './contact-us/contact.html'">Contact me</button>
+    </div>
+	<div class="nextoverlay" onclick="popupmenu()"></div>
+
+	<div class="allContent" id="allcont">
+		
+		<div id="content1">
+			<br />
+        <div class="inp">
+          <input type="text" placeholder=" List item name" autocomplete="off" id="name" />
+          <input
+            type="number"
+            placeholder=" Quantity"
+            autocomplete="off"
+            id="quant"
+          />
+          <input
+            type="number"
+            placeholder=" Price"
+            autocomplete="off"
+            id="price"
+          />
+        </div>
+        <div>
+			<button onclick="addval()" id="addbtn">
+				<i class="fas fa-plus"></i>
+			  </button>
+          <button onclick="deleteList()" id="addbtn">
+            <i class="far fa-trash-alt" style="color: brown;"></i>
+          </button>
+        </div>
+
+        <table id="allcell"></table>
+		
+        <div id="totals"></div>
+		</div>
+
+
+		<div id="content2">
+			
+        
+		</div>
+
+
+		<div id="content3">
+			
+		</div>
+	</div>
+
+    <!--
+	<footer>
+        
+		<div class="icons" onclick="swipeleft1()">
+		  <i class="fas fa-mask" id="icon1"></i>
+		</div>
+		<div class="icons" onclick="swipeleft2()">
+		  <i class="fas fa-calculator" id="icon2"></i>
+		</div>
+
+        
+	  </footer>
+      -->
+
+
+	<script src="./app.js"></script>
+  </body>
+</html>
